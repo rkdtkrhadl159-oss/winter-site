@@ -1384,8 +1384,6 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
   }
 }
 </style>
-
-</body>
 <style>
   /* 전체 페이지 클릭 막기 */
   body {
@@ -1393,7 +1391,6 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
   }
 
   /* 상단 네비게이션 바만 클릭 허용 */
-  /* 아래 선택자들은 일반적인 헤더/네비 클래스입니다. 필요시 조정하세요 */
   header,
   .main-navigation,
   .navigation,
@@ -1402,20 +1399,16 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
   .main-navigation__toggle-menu-btn,
   .header,
   .top-bar,
-  .menu,
-  a[href*="텔레그램"],
-  a[href*="카카오"],
-  a[href*="가입"],
-  a[href*="인증"],
-  a[href*="문의"] {
+  .menu {
     pointer-events: auto !important;
   }
 
-  /* 네비 안의 모든 자식 요소도 클릭 가능하게 */
   header *,
   .main-navigation *,
   nav * {
     pointer-events: auto !important;
   }
 </style>
+
+</body>
 </html>
